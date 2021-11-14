@@ -24,6 +24,8 @@ export default class ApiStack extends sst.Stack {
         "DELETE /notes/{id}": "src/delete.main",
         "POST /billing": "src/billing.main",
       },
+      // enabled by default, just including here for clarity
+      cors: true,
     });
 
     // allow the API to access the table
